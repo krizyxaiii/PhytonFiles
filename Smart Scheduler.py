@@ -1,7 +1,7 @@
 exam_schedule = []
 
 
-# Number 1
+#Number 1: enables to input information regarding name,date,time, and room of the exam
 
 def add_exam():
     name = input("Enter your name: ")
@@ -13,7 +13,7 @@ def add_exam():
     print("Exam Schedule Added!\n")
 
 
-# Number 2
+#Number 2: allows to view all the data that was inputted (library of data)
 
 def view_exams():
     if not exam_schedule:
@@ -27,7 +27,7 @@ def view_exams():
 
     print()
 
-# Number 3
+# enables the data to be edited by choosing what number of data it is (ex. first data is 1, second data is 2, and so on)
 
 def edit_exam():
     if not exam_schedule:
@@ -56,7 +56,7 @@ def edit_exam():
         print("Please Enter A Valid Number.\n")
 
 
-# NUmber 4
+# allows data to be deleted by choosing what number of data it is (similar to Number 3)
 def delete_exam():
     if not exam_schedule:
         print("No Exams To Delete.\n")
@@ -75,6 +75,8 @@ def delete_exam():
     except ValueError:
         print("Please enter a valid number.\n")
 
+ # Shows available options
+
 def show_menu():
     print("Smart Scheduler Options")
     print("1. Add a new exam")
@@ -82,7 +84,7 @@ def show_menu():
     print("3. Edit an exam entry")
     print("4. Delete an exam entry")
     print("5. Exit")
-
+# enable to choose from the available options using 1,2,3,4,5
 
 def main():
     while True:
