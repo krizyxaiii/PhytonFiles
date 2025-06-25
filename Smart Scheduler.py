@@ -6,7 +6,7 @@ exam_schedule = []
 def add_exam():
     name = input("Enter your name: ")
     date = input("Enter the date (MM/DD/YYYY): ")
-    time = input("Enter Time: ")
+    time = input("Enter Time (HH:MM): ")
     room = input("Enter Assigned Room: ")
     exam = {"name": name, "date": date, "time": time, "room": room}
     exam_schedule.append(exam)
@@ -45,8 +45,8 @@ def edit_exam():
 
         print("Leave Blank To Keep Current Value.")
         name = input(f"Enter New Name (Current: {exam['name']}): ") or exam['name']
-        date = input(f"Enter New Date (Current: {exam['date']}): ") or exam['date']
-        time = input(f"Enter New Time (Current: {exam['time']}): ") or exam['time']
+        date = input(f"Enter New Date (Current (MM/DD/YYYY): {exam['date']}): ") or exam['date']
+        time = input(f"Enter New Time (Current (HH:MM): {exam['time']}): ") or exam['time']
         room = input(f"Enter New Room (Current: {exam['room']}): ") or exam['room']
 
         exam_schedule[choice - 1] = {"name": name, "date": date, "time": time, "room": room}
