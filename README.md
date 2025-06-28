@@ -31,3 +31,8 @@ Smart Scheduler Options
 5. Exit
 Select an option (1-5):
 
+*Members*
+1. Lazada, Lee Sayeth D.
+2. Pundavela, Jan Manuel
+3. Sevilla, Ed Khryss
+4. Centinaje, Bejie
